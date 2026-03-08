@@ -44,15 +44,15 @@
             background-size: cover; background-position: center; background-attachment: fixed;
         }
 
-        /* البار السفلي النحيف الفخم */
+        /* البار السفلي النحيف الفخم المعدل لـ 5 أيقونات */
         .floating-nav {
-            position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%); width: 92%; max-width: 450px;
+            position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%); width: 94%; max-width: 480px;
             background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px);
             border-radius: 20px; border: 2px solid #1e3a8a; box-shadow: 0 8px 25px rgba(30, 58, 138, 0.2);
-            display: flex; justify-content: space-around; align-items: center; z-index: 1000; padding: 8px 5px;
+            display: flex; justify-content: space-around; align-items: center; z-index: 1000; padding: 8px 2px;
         }
-        .nav-item { display: flex; flex-direction: column; align-items: center; gap: 2px; color: #64748b; font-size: 9px; font-weight: 800; transition: all 0.3s ease; text-decoration: none; }
-        .nav-item i { font-size: 16px; }
+        .nav-item { display: flex; flex-direction: column; align-items: center; gap: 2px; color: #64748b; font-size: 8.5px; font-weight: 800; transition: all 0.3s ease; text-decoration: none; flex: 1; }
+        .nav-item i { font-size: 15px; }
         .nav-active { color: #1e3a8a !important; }
 
         /* واتساب عائم */
@@ -180,6 +180,7 @@
         <a href="index.html" class="nav-item nav-active"><i class="fas fa-home"></i>الرئيسية</a>
         <a href="index.html#services" class="nav-item"><i class="fas fa-tools"></i>خدماتنا</a>
         <a href="index.html#gallery-section" class="nav-item"><i class="fas fa-images"></i>أعمالنا</a>
+        <a href="https://blog.aboubraheemplumber.com" target="_blank" class="nav-item"><i class="fas fa-blog"></i>المدونة</a>
         <a href="about.html" class="nav-item"><i class="fas fa-id-card"></i>من نحن</a>
     </nav>
 
