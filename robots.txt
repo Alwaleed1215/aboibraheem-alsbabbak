@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: https://aboubraheemplumber.com/sitemap.xml
+Sitemap: https://blog.aboubraheemplumber.com/sitemap.xml
+
