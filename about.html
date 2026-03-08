@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ابو ابراهيم السباك | من نحن</title>
+    
+    <link rel="icon" type="image/png" href="https://i.ibb.co/3mvyW7TG/20260308-044417.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Almarai:wght@700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #f8fafc; overflow-x: hidden; scroll-behavior: smooth; }
+        
+        .royal-signature {
+            color: #d4af37; border: 2px solid #d4af37; padding: 8px 20px; border-radius: 15px; font-size: 11px; font-weight: 900; text-decoration: none; 
+            display: inline-flex; align-items: center; gap: 6px; position: relative; overflow: hidden;
+            background: linear-gradient(90deg, #d4af37, #f3e5ab, #d4af37); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            animation: shine 2.5s linear infinite; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); transition: all 0.3s ease;
+        }
+        @keyframes shine { 0% { background-position: 0% center; } 100% { background-position: 200% center; } }
+
+        .site-title { font-family: 'Almarai', sans-serif; color: #4dabf7; font-size: 14px; font-weight: 800; }
+        
+        .floating-nav {
+            position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%); width: 92%; max-width: 450px;
+            background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px);
+            border-radius: 20px; border: 2px solid #1e3a8a; box-shadow: 0 8px 25px rgba(30, 58, 138, 0.2);
+            display: flex; justify-content: space-around; align-items: center; z-index: 1000; padding: 8px 5px;
+        }
+        .nav-item { display: flex; flex-direction: column; align-items: center; gap: 2px; color: #64748b; font-size: 9px; font-weight: 800; transition: all 0.3s ease; text-decoration: none; }
+        .nav-item i { font-size: 16px; }
+        .nav-active { color: #1e3a8a !important; }
+
+        .whatsapp-float {
+            position: fixed; bottom: 85px; left: 20px; background: #25d366; color: white;
+            width: 45px; height: 45px; border-radius: 50%; font-size: 22px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 999;
+            display: flex; align-items: center; justify-content: center; animation: bounce 2s infinite;
+        }
+
+        .footer-blue { background-color: #1e3a8a; border-top: 4px solid #5eead4; }
+        .silver-text { color: #e2e8f0; text-shadow: 0 0 10px rgba(255, 255, 255, 0.4); }
+    </style>
+</head>
+<body class="pb-32">
+
+    <header class="bg-white/95 fixed top-0 w-full z-40 py-3 px-5 shadow-sm border-b flex items-center justify-start">
+        <div class="flex items-center gap-3">
+            <div class="w-9 h-9 bg-blue-50 rounded-full flex items-center justify-center shadow-sm overflow-hidden border border-blue-100 p-1">
+                <img src="https://i.ibb.co/3mvyW7TG/20260308-044417.png" alt="شعار" class="w-full h-full object-contain">
+            </div>
+            <div class="site-title italic">ابو ابراهيم السباك بالرياض</div>
+        </div>
+    </header>
+
+    <section class="pt-28 pb-12 px-5 min-h-[70vh]">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 text-center">
+            <img src="https://i.ibb.co/3mvyW7TG/20260308-044417.png" class="w-24 mx-auto mb-5 drop-shadow-md" alt="شعار ابو ابراهيم">
+            <h2 class="text-2xl font-black text-blue-900 mb-4">من نحن</h2>
+            <div class="text-[12px] text-gray-700 leading-relaxed text-justify font-bold space-y-4">
+                <p>
+                    في <span class="text-blue-600">أبو إبراهيم لخدمات السباكة</span>، ندرك تماماً أن راحة بالك تبدأ من منزل خالٍ من مشاكل السباكة المزعجة. نحن لسنا مجرد فنيين، بل خبراء متخصصون في تقديم أحدث الحلول العملية والمبتكرة لكل ما يخص أعمال السباكة والصرف الصحي في مدينة الرياض.
+                </p>
+                <p>
+                    سواء كنت تحتاج إلى تأسيس سباكة لفيلا جديدة، أو تبحث عن حل سريع لتسربات المياه المخفية دون تكسير، أو ترغب في تجديد وتشطيب حمامك بلمسة عصرية، فإن فريقنا مستعد لتلبية نداءك بأقصى سرعة.
+                </p>
+                <p>
+                    نتميز بالدقة في المواعيد، الأمانة في العمل، واستخدام أفضل الخامات لضمان نتائج تدوم طويلاً. مع "أبو إبراهيم"، مشكلتك محلولة من الزيارة الأولى.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-blue pt-14 pb-12 text-center shadow-inner">
+        <div class="silver-text font-black text-xl mb-4 italic tracking-widest">ابو ابراهيم السباك</div>
+        <p class="text-[10px] text-slate-300 mb-10 font-bold">جميع الحقوق محفوظة لدى : ابو ابراهيم السباك ٢٠٢٧</p>
+        <a href="https://wa.me/966547194788" class="royal-signature">👑 تم التصميم بواسطة المهندس/ إسلام الشيخ 👑</a>
+    </footer>
+
+    <a href="https://wa.me/966565943956" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+
+    <nav class="floating-nav">
+        <a href="index.html" class="nav-item"><i class="fas fa-home"></i>الرئيسية</a>
+        <a href="index.html#services" class="nav-item"><i class="fas fa-tools"></i>خدماتنا</a>
+        <a href="index.html#gallery-section" class="nav-item"><i class="fas fa-images"></i>أعمالنا</a>
+        <a href="about.html" class="nav-item nav-active"><i class="fas fa-id-card"></i>من نحن</a>
+    </nav>
+
+</body>
+</html>
