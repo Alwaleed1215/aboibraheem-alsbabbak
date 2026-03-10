@@ -67,11 +67,27 @@
         .nav-item i { font-size: 15px; }
         .nav-active { color: #1e3a8a !important; }
 
-        /* واتساب عائم */
+        /* واتساب عائم (اليسار) */
         .whatsapp-float {
             position: fixed; bottom: 85px; left: 20px; background: #25d366; color: white;
             width: 45px; height: 45px; border-radius: 50%; font-size: 22px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 999;
             display: flex; align-items: center; justify-content: center; animation: bounce 2s infinite;
+        }
+
+        /* زر الاتصال العائم الجديد (اليمين) - تم تصميمه باحترافية */
+        .call-float {
+            position: fixed; bottom: 85px; right: 20px; background: #2563eb; color: white; /* لون أزرق مميز يعبر عن الاتصال */
+            width: 45px; height: 45px; border-radius: 50%; font-size: 20px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4); z-index: 999;
+            display: flex; align-items: center; justify-content: center;
+            animation: pulse-ring 2s infinite; /* حركة نبض مستمرة */
+            text-decoration: none;
+        }
+        
+        /* حركة النبض لزر الاتصال */
+        @keyframes pulse-ring {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
         }
 
         .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
@@ -185,6 +201,7 @@
     </footer>
 
     <a href="https://wa.me/966565943956" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:0547174605" class="call-float"><i class="fas fa-phone-alt"></i></a>
 
     <nav class="floating-nav">
         <a href="index.html" class="nav-item nav-active"><i class="fas fa-home"></i>الرئيسية</a>
