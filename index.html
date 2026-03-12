@@ -76,12 +76,13 @@
             background-size: cover; background-position: center; background-attachment: fixed;
         }
         .floating-nav {
-            position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%); width: 94%; max-width: 480px;
+            position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%); width: 96%; max-width: 480px;
             background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px);
             border-radius: 20px; border: 2px solid #1e3a8a; box-shadow: 0 8px 25px rgba(30, 58, 138, 0.2);
             display: flex; justify-content: space-around; align-items: center; z-index: 1000; padding: 8px 2px;
         }
         .nav-item { display: flex; flex-direction: column; align-items: center; gap: 2px; color: #64748b; font-size: 8.5px; font-weight: 800; transition: all 0.3s ease; text-decoration: none; flex: 1; }
+        .nav-item i { font-size: 16px; }
         .nav-active { color: #1e3a8a !important; }
         .whatsapp-float {
             position: fixed; bottom: 85px; left: 20px; background: #25d366; color: white;
@@ -187,7 +188,12 @@
     </section>
 
     <footer class="footer-blue pt-14 pb-12 text-center shadow-inner">
-        <div class="silver-text font-black text-xl mb-4 italic tracking-widest">وليد رزق لخدمات السباكة</div>
+        <div class="silver-text font-black text-xl mb-3 italic tracking-widest">وليد رزق لخدمات السباكة</div>
+        
+        <a href="https://blog.aboubraheemplumber.com" class="inline-block bg-white/10 text-yellow-400 border border-yellow-400/50 rounded-full px-5 py-2 text-[10px] font-bold mb-5 hover:bg-yellow-400 hover:text-blue-900 transition-all">
+            <i class="fas fa-blog ml-1"></i> تصفح مدونتنا للنصائح
+        </a>
+        
         <p class="text-[10px] text-slate-300 mb-10 font-bold">جميع الحقوق محفوظة لدى : وليد رزق ٢٠٢٦</p>
         <a href="https://wa.me/966547194788" class="royal-signature">👑 تم التصميم بواسطة المهندس/ إسلام الشيخ 👑</a>
     </footer>
@@ -198,6 +204,7 @@
     <nav class="floating-nav">
         <a href="#" class="nav-item nav-active"><i class="fas fa-home"></i>الرئيسية</a>
         <a href="#services" class="nav-item"><i class="fas fa-tools"></i>خدماتنا</a>
+        <a href="https://blog.aboubraheemplumber.com" class="nav-item"><i class="fas fa-blog"></i>المدونة</a>
         <a href="#gallery-section" class="nav-item"><i class="fas fa-images"></i>أعمالنا</a>
         <a href="about.html" class="nav-item"><i class="fas fa-id-card"></i>من نحن</a>
     </nav>
