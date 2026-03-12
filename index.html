@@ -54,7 +54,6 @@
 
     <style>
         body { font-family: 'Cairo', sans-serif; background-color: #f8fafc; overflow-x: hidden; scroll-behavior: smooth; }
-        
         #splash-screen { position: fixed; inset: 0; background: white; z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: opacity 0.6s ease-out; }
         @keyframes splash-logo-anim {
             0% { transform: scale(0.85); opacity: 0.9; }
@@ -62,25 +61,20 @@
             100% { transform: scale(0.85); opacity: 0.9; }
         }
         .splash-logo { width: 160px; height: auto; animation: splash-logo-anim 2.5s infinite ease-in-out; }
-
         .royal-signature {
             color: #d4af37; border: 2px solid #d4af37; padding: 8px 20px; border-radius: 15px; font-size: 11px; font-weight: 900; text-decoration: none; 
-            display: inline-flex; align-items: center; gap: 6px; position: relative; overflow: hidden;
-            background: linear-gradient(90deg, #d4af37, #f3e5ab, #d4af37); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(90deg, #d4af37, #f3e5ab, #d4af37); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
             animation: shine 2.5s linear infinite; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); transition: all 0.3s ease;
         }
         @keyframes shine { 0% { background-position: 0% center; } 100% { background-position: 200% center; } }
-
         .site-title { font-family: 'Almarai', sans-serif; color: #1e3a8a; font-size: 14px; font-weight: 800; }
         .header-logo-animate { animation: logo-pulse 3s infinite ease-in-out; }
         @keyframes logo-pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
-
         .hero-bg {
             background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(30, 58, 138, 0.9)), 
                         url('https://imgg.io/images/2026/03/12/ba74336360a0db338f0d3ac7fb6b2ae2.png');
             background-size: cover; background-position: center; background-attachment: fixed;
         }
-
         .floating-nav {
             position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%); width: 94%; max-width: 480px;
             background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px);
@@ -89,36 +83,25 @@
         }
         .nav-item { display: flex; flex-direction: column; align-items: center; gap: 2px; color: #64748b; font-size: 8.5px; font-weight: 800; transition: all 0.3s ease; text-decoration: none; flex: 1; }
         .nav-active { color: #1e3a8a !important; }
-
         .whatsapp-float {
             position: fixed; bottom: 85px; left: 20px; background: #25d366; color: white;
             width: 45px; height: 45px; border-radius: 50%; font-size: 22px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 999;
             display: flex; align-items: center; justify-content: center; animation: bounce 2s infinite;
         }
-
         .call-float {
             position: fixed; bottom: 85px; right: 20px; background: #2563eb; color: white;
             width: 45px; height: 45px; border-radius: 50%; font-size: 20px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4); z-index: 999;
             display: flex; align-items: center; justify-content: center; animation: pulse-ring 2s infinite; text-decoration: none;
         }
-        
-        @keyframes pulse-ring {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
-        }
-
+        @keyframes pulse-ring { 0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); } 70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); } 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); } }
         .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
-        
         .gallery-container { position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; border: 3px solid #1e3a8a; border-radius: 15px; }
         .slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.8s; }
         .slide.active { opacity: 1; }
         .slide img { width: 100%; height: 100%; object-fit: cover; }
-
         .map-container { position: relative; width: 100%; padding-bottom: 75%; height: 0; overflow: hidden; border-radius: 15px; border: 3px solid #1e3a8a; }
         .map-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-
         .contact-box { background: white; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 15px; margin-top: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
         .footer-blue { background-color: #1e3a8a; border-top: 4px solid #d4af37; }
         .silver-text { color: #e2e8f0; text-shadow: 0 0 10px rgba(255, 255, 255, 0.4); }
@@ -145,7 +128,7 @@
     <section class="hero-bg pt-32 pb-20 px-6 text-white text-center">
         <div class="reveal active">
             <h2 class="text-2xl font-black mb-1 leading-tight text-white">وليد رزق لخدمات السباكة</h2>
-            <p class="text-lg font-bold mb-6 text-yellow-400">خبرة وااحترافية في قلب الرياض</p>
+            <p class="text-lg font-bold mb-6 text-yellow-400">خبرة واحترافية في قلب الرياض</p>
             <p class="text-[11px] text-blue-50 mb-8 px-4 opacity-95 leading-relaxed text-justify font-bold">
                 نقدم خدمات السباكة الشاملة، تأسيس الفلل، كشف التسربات بأحدث الأجهزة، وصيانة كافة الشبكات بجودة عالية وسرعة في التنفيذ. نخدمكم في حي المصيف وشمال الرياض على مدار الساعة.
             </p>
@@ -155,22 +138,22 @@
 
     <section id="services" class="px-5 py-12">
         <div class="grid grid-cols-2 gap-4 max-w-md mx-auto">
-            <div class="bg-white p-5 rounded-2xl reveal active border border-slate-100 shadow-sm text-center">
+            <a href="plumbing-maintenance.html" class="bg-white p-5 rounded-2xl reveal active border border-slate-100 shadow-sm text-center">
                 <i class="fas fa-tools text-blue-500 text-3xl mb-3"></i>
                 <h4 class="font-bold text-[11px] text-blue-900">صيانة السباكة</h4>
-            </div>
-            <div class="bg-white p-5 rounded-2xl reveal active border border-slate-100 shadow-sm text-center">
+            </a>
+            <a href="foundation.html" class="bg-white p-5 rounded-2xl reveal active border border-slate-100 shadow-sm text-center">
                 <i class="fas fa-building text-blue-500 text-3xl mb-3"></i>
                 <h4 class="font-bold text-[11px] text-blue-900">تأسيس السباكة</h4>
-            </div>
-            <div class="bg-white p-5 rounded-2xl reveal active border border-slate-100 shadow-sm text-center">
+            </a>
+            <a href="leak-detection.html" class="bg-white p-5 rounded-2xl reveal active border border-slate-100 shadow-sm text-center">
                 <i class="fas fa-search-location text-blue-500 text-3xl mb-3"></i>
                 <h4 class="font-bold text-[11px] text-blue-900">كشف التسربات</h4>
-            </div>
-            <div class="bg-white p-5 rounded-2xl reveal active border border-slate-100 shadow-sm text-center">
+            </a>
+            <a href="sewer-cleaning.html" class="bg-white p-5 rounded-2xl reveal active border border-slate-100 shadow-sm text-center">
                 <i class="fas fa-water text-blue-500 text-3xl mb-3"></i>
                 <h4 class="font-bold text-[11px] text-blue-900">تسليك المجاري</h4>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -188,7 +171,7 @@
         </div>
         <div class="max-w-md mx-auto reveal active">
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.1874296652434!2d46.6853!3d24.7578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f010000000000%3A0x0!2zMjTCsDQ1JzI4LjEiTiA0NsKwNDEnMDcuMSJF!5e0!3m2!1sen!2ssa!4v1710000000000" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115938.16335198!2d46.5444837265625!3d24.7588373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efddd0959f633%3A0x6e2692f80a424a!2z2K3ZiiDYp9mE2YXYtdmK2YHYjCDYp9mE2LHZitin2LY!5e0!3m2!1sar!2ssa!4v1710278400000!5m2!1sar!2ssa" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="contact-box">
                 <div class="flex items-center gap-3 mb-3">
@@ -216,7 +199,7 @@
         <a href="#" class="nav-item nav-active"><i class="fas fa-home"></i>الرئيسية</a>
         <a href="#services" class="nav-item"><i class="fas fa-tools"></i>خدماتنا</a>
         <a href="#gallery-section" class="nav-item"><i class="fas fa-images"></i>أعمالنا</a>
-        <a href="#location" class="nav-item"><i class="fas fa-id-card"></i>تواصل معنا</a>
+        <a href="about.html" class="nav-item"><i class="fas fa-id-card"></i>من نحن</a>
     </nav>
 
     <script>
